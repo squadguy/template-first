@@ -8,9 +8,45 @@
 			max-width: 85%;
 			margin: 0 auto;
 		}
+		nav {
+			background-color: red;
+			overflow: hidden;
+			border-radius:.75em;
+		}
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+		nav ul li {
+			float: left;
+		}
+		nav ul li a {
+			font-weight: bold;
+			color: white;
+			display: block;
+			padding: .5em;
+			border: 2px solid white;
+			border-radius: .5em;
+			text-decoration: none;
+			margin: .25em;
+		}
+		nav ul a:focus {
+			color: #fc6;
+			border-color: #fff;
+		}
+		nav ul a:hover{
+			color: white;
+			border-color:#fff;
+			background-color: grey;
+		}
 		#header {
 			background-color: grey;
+			border-radius: .5em;
+			clear: both;
+			overflow: hidden;
 			padding: 60px 0;
+
 		}
 		#header h1 {
 			margin: 0 0 0 15px;
@@ -38,6 +74,14 @@
 </head>
 <body>
 	<div id="wrapper">
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
 		<div id="header">
 			<h1>Masthead and headline</h1>
 		</div>
